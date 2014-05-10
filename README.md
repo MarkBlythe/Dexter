@@ -16,4 +16,4 @@ A demo WordPress build can be found here [http://mcb.codes/dexter/demo] it leave
 2. Upload to the WordPress `/wp-content/themes/` folder.
 3. Customise to your hearts content.
 
-If you feel like showing offFeel free to email or tweet me your finished product.
+If you feel like showing off, feel free to email or tweet me your finished product.
