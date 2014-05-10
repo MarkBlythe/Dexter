@@ -1,0 +1,95 @@
+/*
+Theme Name: Dexter
+Theme URI: http://mcb.codes/dexter/
+Author: Mark Blythe
+Author URI: http://markblythe.co.uk
+Description: A skeleton theme for WordPress Development.
+Version: 1.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/********************************** FONTS **********************************/
+@import url("fonts/fonts.css");
+/********************************** RESET **********************************/
+*{margin:0;padding:0;}
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed, 
+figure,figcaption,footer,header,hgroup, 
+menu,nav,output,ruby,section,summary,
+time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;}
+body{font-size:62.5%;line-height:1;}
+/*=HTML5 display-role reset for older browsers*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{display:block;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,
+q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+.clear{clear:both !important;height:0px !important;overflow:hidden !important;margin:0 !important;padding:0 !important;border:0 !important;border:none !important;}
+.left{float:left;}
+.right{float:right;}
+a,button,input[type=submit]{cursor:pointer;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;}
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+ .clearfix {display: inline-block;}
+ html[xmlns] .clearfix {display: block;}
+ * html .clearfix {height: 1%;}
+ /* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+/********************************** GRID LAYOUT **********************************/
+body,
+header,
+#content,
+#content section,
+footer {position:relative; min-width:300px; width:100%;}
+html,body,.inner {height:100%; font-family:'robotoregular', helvetica, arial, sans-serif; color:#fff;}
+#content section {position:relative; height:100%;}
+.center {margin:0 auto; text-align:center;}
+.left {float:left;}
+.right {float:right;}
+/********************************** CONTAINERS **********************************/
+body {background:#212121;}
+.inner {display:block; position:relative; width:960px; margin:0 auto;}
+header {background:#960a11; display:block; margin:0 auto; padding:20px 0;}
+#content {padding:20px 0;}
+#container {display:block; float:left; width:740px;}
+
+article {display:block; margin:0 auto 20px; color:#fff; width:740px;}
+article .image {display:block; float:left; width:200px;}
+article .image img {border:1px solid #960a11;}
+article .text {display:block; float:left; width:540px;}
+article.detail {margin:20px auto; color:#fff; width:100%;}
+article.detail img {margin:0 auto 20px; max-height:200px; width:auto; text-align:center;}
+
+#sidebar {display:block; float:left; width:200px; margin:0 auto; margin-right:20px;}
+/********************************** HEADERS **********************************/
+#logo {display:block; float:left; margin-bottom:0;}
+#twitter-widget-0 {margin-top:10px; display:block; float:right;}
+h1 {font-size:28px; line-height:32px; font-family: 'roboto_slabbold', helvetica, arial, sans-serif; color: #fff; text-decoration: none; text-transform:uppercase; margin-bottom:20px;}
+h3 {font-family: 'roboto_slabbold', helvetica, arial, sans-serif; font-size:24px; line-height: 28px;}
+/********************************** TEXT *************************************/
+p {font-size:12px; line-height:16px; color:#fff; margin-bottom:20px;}
+a {font-size:12px; line-height:16px; color:#fff; text-decoration:none;}
+a:hover {color:#960a11;}
+footer p {text-align:center;}
+/********************************** BUTTONS *************************************/		
+.btn {}
+.btn:hover {}
+/********************************** SOCIAL *************************************/
+
+/********************************** CONTENT SPECIFIC **********************************/
+.search-form label span {display:none;}
+/********************************** MENUS **********************************/
+nav {display:block; float:right; width:410px;}
+  nav ul li {display:block; float:left;}
+    nav ul li a {display:block; float:left; margin:10px 20px;}
+      nav ul li a:hover, nav ul li a:active, nav ul li a:focus, nav ul li a.current {color:#212121;}
+/********************************** FORMS **********************************/
