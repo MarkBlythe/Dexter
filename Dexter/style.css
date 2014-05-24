@@ -73,5 +73,6 @@ a {font-size:12px; line-height:16px; color:#000; text-decoration:none;}
 nav {}
   nav ul li {}
     nav ul li a {}
-      nav ul li a:hover, nav ul li a:active, nav ul li a:focus, nav ul li a.current {}
+      nav ul li a:hover, nav ul li a:active, nav ul li a:focus, nav ul li.current-menu-item, nav ul li.current_page_item {}
+      nav ul li.current_page_parent {}
 /********************************** FORMS **********************************/
