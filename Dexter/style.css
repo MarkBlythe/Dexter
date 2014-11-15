@@ -58,17 +58,13 @@ html,body,.inner {height:100%; font-family:'customfont', helvetica, arial, sans-
 /********************************** CONTAINERS **********************************/
 .inner {display:block; position:relative; width:960px; margin:0 auto;}
 /********************************** HEADERS **********************************/
-#logo {background:url('images/logo.png') no-repeat; width:px; height:px;}
+#logo {display:block; background:url('images/logo.png') no-repeat; width:px; height:px;}
 /********************************** TEXT *************************************/
 p {font-size:12px; line-height:16px; color:#000;}
 a {font-size:12px; line-height:16px; color:#000; text-decoration:none;}
 /********************************** BUTTONS *************************************/		
 .btn {}
 .btn:hover {}
-/********************************** SOCIAL *************************************/
-
-/********************************** CONTENT SPECIFIC **********************************/
-
 /********************************** MENUS **********************************/
 nav {}
   nav ul li {}

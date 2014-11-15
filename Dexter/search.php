@@ -9,7 +9,7 @@ get_header();?>
   <h1><?php printf( __( 'Search Results for: %s', 'dexter' ), get_search_query()); ?></h1>
   <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
-      <article>
+      <article class="clearfix">
         <div class="image">
           <?php the_post_thumbnail('thumbnail');?>
         </div>
@@ -18,7 +18,6 @@ get_header();?>
           <?php the_excerpt();?>
           <a href="<?php the_permalink();?>">Read More</a>
         </div>
-        <div class="clear"></div>
       </article>
     <?php endwhile; ?>
   <?php endif; ?>

@@ -51,3 +51,57 @@ function dexter_scripts() {
 
 } // End dexter_scripts
 add_action('wp_enqueue_scripts', 'dexter_scripts');
+
+// Custom WordPress Pagination. No need for pointless plugins.
+function mb_pagination($pages = '', $range = 2)
+{
+    $showitems = ($range * 2)+1;  
+
+    global $paged;
+
+    if(empty($paged)) $paged = 1;
+
+    if($pages == '')
+    {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if(!$pages)
+        {
+            $pages = 1;
+        }
+    }   
+
+    if($pages != 1)
+    {
+        echo "<div class='pagination clearfix'>";
+        
+        // As well as numbered pagination provide a previous page link.
+        echo "<div class='pagination-prev'>";
+        previous_posts_link('Previous');
+        echo "</div>";
+        
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'></a>";
+        
+        if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'></a>";
+
+        for ($i=1; $i <= $pages; $i++)
+        {
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+            {
+                echo ($paged == $i)? "<a class='current'>".$i."</a>":"<a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a>";
+            }
+        }
+
+        if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($paged + 1)."'></a>";  
+        
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'></a>";
+        
+        // As well as numbered pagination provide a next page link.
+        echo "<div class='pagination-next'>";
+        next_posts_link('Next');
+        echo "</div>";
+        
+        // Close pagination div.
+        echo "</div>";
+     }
+}

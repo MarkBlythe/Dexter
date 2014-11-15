@@ -9,5 +9,4 @@ get_header();?>
     <h1>The page you requested could not be found.</h1>
   </div>
 </section>
-<?php //get_sidebar();?>
 <?php get_footer();?>

@@ -11,5 +11,4 @@ get_header();?>
     <?php endwhile;?>
   </div>
 </section>
-<?php //get_sidebar();?>
 <?php get_footer();?>
