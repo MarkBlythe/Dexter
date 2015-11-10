@@ -8,7 +8,7 @@ I have created a skeleton theme with all of the vital files and some optional ex
 
 This theme can be used for any WordPress build and due to its simplicity it can be expanded for any size website essentially saving those tedious first few hours setting up a new build and getting the website off the ground.
 
-A demo WordPress build can be found here http://mcb.codes/dexter/demo it leaves a lot to the imagination but this theme was built to be customised.
+The theme leaves a lot to the imagination but this theme was built to be customised.
 
 ### How To Set Up
 
